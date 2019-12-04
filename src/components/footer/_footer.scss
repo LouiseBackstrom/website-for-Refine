@@ -1,0 +1,11 @@
+@import '@/scss/_main.scss';
+
+footer {
+    display: grid;
+    grid-template: auto auto auto auto auto auto;
+    background-color: $darkbeige;
+
+    p {
+        grid-area: 1 / 1 / span 1 / span 6;
+    }
+}
