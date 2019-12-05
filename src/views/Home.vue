@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <Hem />
+  <div>
+    <img src="pallet" alt="src/assets/pallet.jpg">
+  </div>
     <Footer />
   </div>
 </template>
