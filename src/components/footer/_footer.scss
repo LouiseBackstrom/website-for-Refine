@@ -2,10 +2,47 @@
 
 footer {
     display: grid;
-    grid-template: auto auto auto auto auto auto;
-    background-color: $darkbeige;
+    grid-template-columns: repeat(8, 12.5%);
+    background-color: $footer;
+    padding: 2rem 0 0 0;
+    margin: 2rem 0 0 0;
 
-    p {
-        grid-area: 1 / 1 / span 1 / span 6;
+    .item1 {
+        grid-area: 1 / 1 / span 1 / span 3;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .item2 {
+        grid-area: 1 / 4 / span 1 / span 2;
+
+        img {
+            width: 10vw;
+            object-fit: cover;
+        }
+    }
+    .item3 {
+        grid-area: 1 / 6 / span 1 / span 1;
+
+        img {
+            width: 4vw;
+            object-fit: cover;
+        }
+    }
+    .item4 {
+        grid-area: 1 / 7 / span 1 / span 1;
+        img {
+            width: 4vw;
+            object-fit: cover;
+        }
+    }
+    .item5 {
+        grid-area: 1 / 8 / span 1 / span 1;
+
+        img {
+            width: 4vw;
+            object-fit: cover;
+        }
     }
 }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav>
-      <div class="nav1"><router-link to="/">Hem</router-link></div>
+      <div class="nav1"><router-link to="/"><img src="@/assets/RefineLogoBlackTransp2.png" alt="logo"></router-link></div>
       <div class="nav2"><router-link to="/about_me">Om Mig</router-link></div>
       <div class="nav3"><router-link to="/services">Tjänster</router-link></div>
       <div class="nav4"><router-link to="/pall_smart">Pall-Smartness</router-link></div>
@@ -18,6 +18,8 @@
 
 
 <style lang="scss">
+@import '@/scss/_main.scss';
+
 body {
   margin: 0;
 }
@@ -31,18 +33,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: black;
+  color: $black;
 
 
   nav {
-    background-color: white;
+    background-color: $white;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: .2rem;
-    font-size: 1.2rem;
+    grid-template-columns: repeat(8, auto);
+    grid-column-gap: .2rem;
+    font-size: 1rem;
+    color: $black;
+    padding: 1.5rem;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    
 
     .nav1 {
-      grid-area: 1 / 3 / span 1 / span 1;
+      grid-area: 1 / 1 / span 1 / span 2;
+      img {
+         width: 20vw;
+      }
     }
     .nav2 {
       grid-area: 1 / 4 / span 1 / span 1;
@@ -62,11 +73,18 @@ body {
 
     a {
       font-weight: bold;
-      color: #2c3e50;
+      text-decoration: none;
 
       &.router-link-exact-active {
-        color: #42b983;
+        color: $footer;
       }
+    }
+
+    :hover {
+      background-color:$footer;
+      }
+    :visited {
+      color: black;
     }
   }
     .fade-enter-active, .fade-leave-active {
