@@ -1,7 +1,7 @@
 <template>
   <div class="pall_smartness">
         <div class="item1">
-            <img src="@/assets/CustomerTrust1.png" alt="pall">
+            <img src="@/assets/reglerpall.png" alt="pall">
         </div>
         <div class="item2">
             <h2>Lorem Ipsum</h2>
