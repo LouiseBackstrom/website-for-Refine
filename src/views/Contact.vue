@@ -1,21 +1,21 @@
 <template>
-  <div class="about_me">
-   
-    
-    <h1>Page</h1>
-   <Footer />
+  <div class="contact">
+    <Kontakt />
+    <Footer />
   </div>
 </template>
 
 <script>
 
+import Kontakt from '@/components/kontakt/Kontakt.vue'
 import Footer from '@/components/footer/Footer.vue'
 
 
 export default {
-  name: 'about_me',
+  name: 'contact',
   components: {
-   Footer 
+    Kontakt,
+    Footer 
     
   }
 }
