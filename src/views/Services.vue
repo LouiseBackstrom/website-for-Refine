@@ -1,7 +1,5 @@
 <template>
   <div class="services">
-    
-    
     <Tjanster />
     <Footer />
   </div>

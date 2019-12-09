@@ -1,11 +1,7 @@
 @import '@/scss/_main.scss';
 
 .hem {
-    display: grid;
-    grid-template-columns: repeat(8, 12.5%);
-
-    .item1 {
-        grid-area: 1 / 1 / span 1 / span 8;
+    .item0 {
         margin: 2rem 0;
 
         img {
@@ -15,50 +11,55 @@
             opacity: 0.7;
         }
     }
-    .item2 {
-        grid-area: 2 / 1 / span 1 / span 4;
-        margin: 2rem 0;
-        img {
-            width: 100%;
-            height: 40vw;
-            object-fit: cover;
-            opacity: 0.7;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+
+        .item1 {
+            grid-area: 1 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            img {
+                width: 100%;
+                height: 40vw;
+                object-fit: cover;
+                opacity: 0.7;
+            }
         }
-    }
-    .item3 {
-        grid-area: 2 / 5 / span 1 / span 4;
-        margin: 2rem 0;
-        background-color: $beige;
-        padding: 2rem;
-        height: 40vw;
-    }
-    .item4 {
-        grid-area: 3 / 1 / span 1 / span 4;
-        margin: 2rem 0;
-        background-color: $lightbeige;
-        height: 40vw;
-        padding: 2rem;
-    }
-    .item5 {
-        grid-area: 3 / 1 / span 1 / span 4;
-        margin: 2rem 0;
-        height: 40vw;
-        padding: 2rem;
-    }
-    .item6 {
-        grid-area: 4 / 1 / span 1 / span 4;
-        margin: 2rem 0;
-        img {
-            height: 100%;
+        .item2 {
+            grid-area: 2 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            background-color: $beige;
+            padding: 2rem;
             height: 40vw;
-            object-fit: cover;
         }
-    }
-    .item7 {
-        grid-area: 4 / 5 / span 1 / span 4;
-        margin: 2rem 0;
-        background-color: $darkbeige;
-        height: 40vw;
-        padding: 2rem;
+        .item3 {
+            grid-area: 3 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            background-color: $lightbeige;
+            height: 40vw;
+            padding: 2rem;
+        }
+        .item4 {
+            grid-area: 4 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            height: 40vw;
+            padding: 2rem;
+        }
+        .item5 {
+            grid-area: 5 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            img {
+                height: 100%;
+                height: 40vw;
+                object-fit: cover;
+            }
+        }
+        .item6 {
+            grid-area: 6 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            background-color: $darkbeige;
+            height: 40vw;
+            padding: 2rem;
+        }
     }
 }

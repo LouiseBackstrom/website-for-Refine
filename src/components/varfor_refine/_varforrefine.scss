@@ -1,38 +1,40 @@
 @import '@/scss/_main.scss';
 
 .varfor_refine {
-    display: grid;
-    grid-template-columns: repeat(8, 12.5%);
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
 
-    .item1 {
-        grid-area: 1 / 1 / span 1 / span 4;
-        margin: 2rem 0;
-       
-        img {
-            width: 100%;
-            height: 30vw;
-            object-fit: cover;
+        .item1 {
+            grid-area: 1 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+        
+            img {
+                width: 100%;
+                height: 30vw;
+                object-fit: cover;
+            }
         }
-    }
-    .item2 {
-        grid-area: 1 / 5 / span 1 / span 4;
-        margin: 2rem 0;
-        padding: 2rem;
-        height: 30vw;
-        background-color: $beige;
-    }
-    .item3 {
-        grid-area: 2 / 1 / span 1 / span 4;
-        margin: 2rem 0;
-        padding: 2rem;
-        height: 30vw;
-        background-color: $lightbeige;
-    }
-    .item4 {
-        grid-area: 2 / 5 / span 1 / span 4;
-        margin: 2rem 0;
-        background-color: $darkbeige;
-        height: 30vw;
-        padding: 2rem;
+        .item2 {
+            grid-area: 2 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            padding: 2rem;
+            height: 30vw;
+            background-color: $beige;
+        }
+        .item3 {
+            grid-area: 3 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            padding: 2rem;
+            height: 30vw;
+            background-color: $lightbeige;
+        }
+        .item4 {
+            grid-area: 4 / 1 / span 1 / span 8;
+            margin: 2rem 0;
+            background-color: $darkbeige;
+            height: 30vw;
+            padding: 2rem;
+        }
     }
 }

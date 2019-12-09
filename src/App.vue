@@ -99,8 +99,33 @@ body {
     }
   }
 
-  
-  
+ @media (max-width: 600px) {
+   .hem{
+    .grid {
+        .item1 {
+            grid-area: 1 / 1 / span 1 / span 8;
+        }
+        .item2 {
+            grid-area: 2 / 1 / span 1 / span 8;
+        }
+        .item3 {
+            grid-area: 3 / 1 / span 1 / span 8;
+        }
+        .item4 {
+            grid-area: 4 / 1 / span 1 / span 8;
+        }
+        .item5 {
+            grid-area: 5 / 1 / span 1 / span 8;
+        }
+        .item6 {
+            grid-area: 6 / 1 / span 1 / span 8;
+        }
+        .item7 {
+            grid-area: 7 / 1 / span 1 / span 8;
+        }
+    }
+}
+ }
 
 
 </style>

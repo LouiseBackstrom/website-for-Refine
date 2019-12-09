@@ -1,46 +1,44 @@
 @import '@/scss/_main.scss';
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(8, 12.5%);
-    background-color: $footer;
-    padding: 2rem 0 0 0;
-    margin: 2rem 0 0 0;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+        background-color: $footer;
+        margin: 2rem 0 0 0;
+        padding: 1.5rem 0 1rem 0;
 
-    .item1 {
-        grid-area: 1 / 1 / span 1 / span 3;
+        .item1 {
+            grid-area: 1 / 1 / span 1 / span 3;
 
-        p {
-            font-size: 0.8rem;
-            margin: 0.3rem;
+            p {
+                font-size: 0.8rem;
+                margin: 0.3rem;
+            }
         }
-    }
-    .item2 {
-        grid-area: 1 / 4 / span 1 / span 2;
-
-        img {
-            width: 7vw;
-            object-fit: cover;
+        .item2 {
+            grid-area: 1 / 4 / span 1 / span 2;
+            img {
+                width: 5vw;
+                object-fit: cover;
+            }
         }
-    }
-    .item3 {
-        grid-area: 1 / 6 / span 1 / span 3;
-        padding: 2rem 0 0 0;
-
-        .instagram {
-            width: 3vw;
-            object-fit: cover;
-            margin: 0 1rem;
-        }
-        .facebook {
-            width: 3vw;
-            object-fit: cover;
-            margin: 0 1rem;
-        }
-        .linkedin {
-            width: 3vw;
-            object-fit: cover;
-            margin: 0 1rem;
+        .item3 {
+            grid-area: 1 / 6 / span 1 / span 3;
+        
+            .instagram {
+                width: 6vw;
+                object-fit: cover;
+            }
+            .facebook {
+                width: 6vw;
+                object-fit: cover;
+            }
+            .linkedin {
+                width: 6vw;
+                object-fit: cover;
+                margin: 0 0.3rem;
+            }
         }
     }
 }
