@@ -7,7 +7,7 @@
 
 <script>
 
-import OmMig from '@/components/ommig/OmMig.vue'
+import OmMig from '@/components/om_mig/OmMig.vue'
 import Footer from '@/components/footer/Footer.vue'
 
 export default {
