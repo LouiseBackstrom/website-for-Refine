@@ -12,37 +12,35 @@ footer {
 
         p {
             font-size: 0.8rem;
+            margin: 0.3rem;
         }
     }
     .item2 {
         grid-area: 1 / 4 / span 1 / span 2;
 
         img {
-            width: 10vw;
+            width: 7vw;
             object-fit: cover;
         }
     }
     .item3 {
-        grid-area: 1 / 6 / span 1 / span 1;
+        grid-area: 1 / 6 / span 1 / span 3;
+        padding: 2rem 0 0 0;
 
-        img {
-            width: 4vw;
+        .instagram {
+            width: 3vw;
             object-fit: cover;
+            margin: 0 1rem;
         }
-    }
-    .item4 {
-        grid-area: 1 / 7 / span 1 / span 1;
-        img {
-            width: 4vw;
+        .facebook {
+            width: 3vw;
             object-fit: cover;
+            margin: 0 1rem;
         }
-    }
-    .item5 {
-        grid-area: 1 / 8 / span 1 / span 1;
-
-        img {
-            width: 4vw;
+        .linkedin {
+            width: 3vw;
             object-fit: cover;
+            margin: 0 1rem;
         }
     }
 }

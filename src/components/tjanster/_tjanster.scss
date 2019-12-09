@@ -1,0 +1,39 @@
+@import '@/scss/_main.scss';
+
+.hem {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+
+    .item1 {
+        grid-area: 1 / 1 / span 1 / span 8;
+        margin: 2rem 0;
+        padding: 2rem;
+        height: 40vw;
+        background-color: $lightgray;
+    }
+    .item2 {
+        grid-area: 2 / 1 / span 1 / span 4;
+        margin: 2rem 0;
+        padding: 2rem;
+        height: 40vw;
+        background-color: $gray;
+    }
+    .item3 {
+        grid-area: 2 / 5 / span 1 / span 4;
+        margin: 2rem 0;
+        background-color: $beige;
+
+        img {
+            height: 100%;
+            height: 40vw;
+            object-fit: cover;
+        }
+    }
+    .item4 {
+        grid-area: 3 / 1 / span 1 / span 8;
+        margin: 2rem 0;
+        background-color: $darkgray;
+        height: 40vw;
+        padding: 2rem;
+    }
+}

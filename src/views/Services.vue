@@ -2,20 +2,22 @@
   <div class="services">
     
     
-    <h1>This is</h1>
+    <Tjanster />
     <Footer />
   </div>
 </template>
 
 <script>
 
+import Tjanster from '@/components/tjanster/Tjanster.vue'
 import Footer from '@/components/footer/Footer.vue'
 
 
 export default {
   name: 'services',
   components: {
-   Footer
+    Tjanster,
+    Footer
     
   }
 }
