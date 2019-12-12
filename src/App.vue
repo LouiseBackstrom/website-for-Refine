@@ -2,18 +2,50 @@
   <div id="app">
     <nav>
       <div class="nav1"><router-link to="/"><img src="@/assets/RefineLogoBlackTransp2.png" alt="logo"></router-link></div>
-      <div class="nav2"><router-link to="/about_me">Om Mig</router-link></div>
-      <div class="nav3"><router-link to="/services">Tjänster</router-link></div>
-      <div class="nav4"><router-link to="/pall_smart">Pall-Smartness</router-link></div>
-      <div class="nav5"><router-link to="/why_refine">Varför Refine</router-link></div>
-      <div class="nav6"><router-link to="/contact">Kontakt</router-link></div>
+      <div class="nav2"><router-link to="/about_me"><h4>Om Mig</h4></router-link></div>
+      <div class="nav3"><router-link to="/services"><h4>Tjänster</h4></router-link></div>
+      <div class="nav4"><router-link to="/pall_smart"><h4>Pall-Smartness</h4></router-link></div>
+      <div class="nav5"><router-link to="/why_refine"><h4>Varför Refine</h4></router-link></div>
+      <div class="nav6"><router-link to="/contact"><h4>Kontakt</h4></router-link></div>
     </nav>
+    <div v-if="nav_mobile" class="nav_mobile">
+      <div class="hamburger" @click="open"><img src="@/assets/three-horizontal-lines.png" alt="hamburger"></div>
+      <div class="logo_mobile"><router-link to="/"><img src="@/assets/RefineLogoBlackTransp2.png" alt="logo"></router-link></div>
+    </div>
+    <div v-if="nav_open" name="fade" class="nav_open" style: width>
+      <div class="close" @click="close"><img src="@/assets/close.png" alt="close"></div>
+      <div class="nav_mobile1"><router-link to="/about_me"><h2>Om Mig</h2></router-link></div>
+      <div class="nav_mobile2"><router-link to="/services"><h2>Tjänster</h2></router-link></div>
+      <div class="nav_mobile3"><router-link to="/pall_smart"><h2>Pall Smartness</h2></router-link></div>
+      <div class="nav_mobile4"><router-link to="/why_refine"><h2>Varför Refine</h2></router-link></div>
+      <div class="nav_mobile5"><router-link to="/contact"><h2>Kontakt</h2></router-link></div>
+    </div>
     <transition name="fade"><router-view/></transition>
   </div>
 </template>
 
 <script>
 
+
+export default {
+  name: 'app',
+   data () {
+     return {
+       nav_open: false,
+       nav_mobile: true
+     }
+   },
+     methods: {
+       open() {
+         this.nav_open = true;
+         this.nav_mobile = false;
+       },
+       close () {
+         this.nav_open = false;
+         this.nav_mobile = true;
+       }
+     }    
+  }
 </script>
 
 
@@ -35,7 +67,6 @@ body {
   text-align: center;
   color: $black;
 
-
   nav {
     background-color: $white;
     display: grid;
@@ -43,7 +74,7 @@ body {
     grid-column-gap: .2rem;
     font-size: 1rem;
     color: $black;
-    padding: 1.5rem;
+    padding: 1.5rem 0 0 0;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -80,14 +111,67 @@ body {
       }
     }
 
-    :hover {
-      background-color:$footer;
-      }
     :visited {
       color: black;
     }
   }
-    .fade-enter-active, .fade-leave-active {
+  .nav_mobile {
+    
+    .hamburger {
+      img {
+      height: 100%;
+      width: 8vw;
+      object-fit: cover;
+      }
+    }
+  }
+  .nav_open {
+      display: grid;
+      grid-template-columns: repeat(8, auto);
+      grid-column-gap: .2rem;
+      position: sticky;
+      z-index: 1;
+      top: 0;
+      background-color: $footer;
+      padding: 1rem 0 5rem 0;
+      
+      transition: all 2s ease;
+
+      h2 {
+         color: $white;
+      }
+
+      .close {
+        grid-area: 2/ 8 / span 1 / span 1;
+
+        img {
+        height: 100%;
+        width: 18vw;
+        object-fit: cover;
+        }
+      }
+      .nav_mobile1 {
+        grid-area: 3 / 1 / span 1 / span 8;
+        padding: 1rem;
+      }
+      .nav_mobile2 {
+        grid-area: 4 / 1 / span 1 / span 8;
+        padding: 1rem;
+      }
+      .nav_mobile3 {
+        grid-area: 5 / 1 / span 1 / span 8;
+        padding: 1rem;
+      }
+      .nav_mobile4 {
+        grid-area: 6 / 1 / span 1 / span 8;
+        padding: 1rem;
+      }
+      .nav_mobile5 {
+        grid-area: 7 / 1 / span 1 / span 8;
+        padding: 1rem;
+      }
+     }
+    .fade {
     transition-property: opacity;
     transition-duration: .25s;
     }
@@ -98,33 +182,44 @@ body {
     opacity: 0
     }
   }
+ @media (max-width: 769px) {
+   #app {
+     nav {
+       margin-top: -3rem;
+       position: static;
+     }
+     .nav_mobile{
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+        margin: 1rem 0;
 
- @media (max-width: 600px) {
-   .hem{
-    .grid {
-        .item1 {
-            grid-area: 1 / 1 / span 1 / span 8;
+      .logo_mobile {
+        grid-area: 1 / 1 / span 1 / span 2;
+        img {
+          width: 40vw;
         }
-        .item2 {
-            grid-area: 2 / 1 / span 1 / span 8;
-        }
-        .item3 {
-            grid-area: 3 / 1 / span 1 / span 8;
-        }
-        .item4 {
-            grid-area: 4 / 1 / span 1 / span 8;
-        }
-        .item5 {
-            grid-area: 5 / 1 / span 1 / span 8;
-        }
-        .item6 {
-            grid-area: 6 / 1 / span 1 / span 8;
-        }
-        .item7 {
-            grid-area: 7 / 1 / span 1 / span 8;
-        }
-    }
-}
+      }
+      .hamburger {
+        grid-area: 1 / 8 / span 1 / span 1;
+      }
+     }
+   }
+ }
+ @media (min-width: 770px) {
+   #app {
+     .nav_mobile {
+      .logo_mobile {
+        opacity: 0;
+      }
+      .hamburger {
+        opacity: 0;
+        margin-top: -10rem;
+      }
+     }
+     .nav_open {
+       opacity: 0;
+     }
+   }
  }
 
 

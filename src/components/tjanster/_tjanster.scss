@@ -7,34 +7,66 @@
 
         .item1 {
             grid-area: 1 / 1 / span 1 / span 8;
-            margin: 2rem 0;
+            margin: 0.25rem 0;
             padding: 2rem;
-            height: 30vw;
+            height: 50vw;
             background-color: $lightbeige;
         }
         .item2 {
             grid-area: 2 / 1 / span 1 / span 8;
-            margin: 2rem 0;
+            margin: 0.25rem 0;
             padding: 2rem;
-            height: 30vw;
+            height: 50vw;
             background-color: $darkbeige;
         }
         .item3 {
             grid-area: 3 / 1 / span 1 / span 8;
-            margin: 2rem 0;
+            margin: 0.25rem 0;
 
             img {
                 width: 100%;
-                height: 30vw;
+                height: 50vw;
                 object-fit: cover;
             }
         }
         .item4 {
             grid-area: 4 / 1 / span 1 / span 8;
-            margin: 2rem 0;
-            background-color: $beige;
-            height: 30vw;
+            margin: 0.25rem 0;
             padding: 2rem;
+            background-color: $beige;
+            height: 50vw;
+        }
+    }
+}
+@media (min-width: 770px) {
+    .tjanster {
+        .grid {
+            .item1 {
+                grid-area: 1 / 1 / span 1 / span 4;
+                margin: 2rem 0;
+                padding: 4rem 2rem;
+                height: 30vw;
+            }
+            .item2 {
+                grid-area: 1 / 5 / span 1 / span 4;
+                margin: 2rem 0;
+                padding: 4rem 2rem;
+                height: 30vw;
+            }
+            .item3 {
+                grid-area: 2 / 1 / span 1 / span 4;
+                margin: 2rem 0;
+
+                img {
+                    height: 30vw;
+                }
+            }
+            .item4 {
+                grid-area: 2 / 5 / span 1 / span 4;
+                margin: 2rem 0;
+                padding: 4rem 2rem;
+                height: 30vw;
+            }
         }
     }
 }
