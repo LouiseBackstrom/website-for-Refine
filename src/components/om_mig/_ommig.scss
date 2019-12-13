@@ -13,6 +13,7 @@
                 width: 100%;
                 height: 50vw;
                 object-fit: cover;
+                opacity: 0.75;
             }
         }
         .item2 {
@@ -47,7 +48,6 @@
 
                 img {
                     height: 30vw;
-                    opacity: 0.6;
                 }
             }
             .item2 {
