@@ -21,19 +21,19 @@
             margin: 0.25rem 0;
             padding: 0.5rem;
             height: 50vw;
-            background-color: $gray;
+            background-color: $beige;
         }
         .item3 {
             grid-area: 3 / 1 / span 1 / span 8;
             margin: 0.25rem 0;
             padding: 0.5rem;
             height: 50vw;
-            background-color: $lightgray;
+            background-color: $lightbeige;
         }
         .item4 {
             grid-area: 4 / 1 / span 1 / span 8;
             margin: 0.25rem 0;
-            background-color: $darkgray;
+            background-color: $darkbeige;
             height: 50vw;
             padding: 0.5rem;
         }

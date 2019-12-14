@@ -35,6 +35,11 @@ const routes = [
     component: () => import('../views/Why_Refine')
   },
   {
+    path: '/blog',
+    name: 'blog',
+    component: () => import('../views/Blog')
+  },
+  {
     path: '/contact',
     name: 'contact',
     component: () => import('../views/Contact.vue')
