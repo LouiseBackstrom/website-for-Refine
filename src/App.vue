@@ -114,7 +114,7 @@ body {
       text-decoration: none;
 
       &.router-link-exact-active {
-        color: $footer;
+        color: $darkbeige;
       }
     }
 
@@ -231,7 +231,7 @@ body {
       }
       .hamburger {
         opacity: 0;
-        margin-top: -10rem;
+        margin-top: -9rem;
       }
      }
      .nav_open {

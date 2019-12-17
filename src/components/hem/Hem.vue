@@ -2,7 +2,7 @@
   <div class="hem">
     <div class="grid">
       <div class="item1">
-        <img src="@/assets/pallet1.jpg" alt="pallet">
+        <img src="@/assets/pallet.png" alt="pallet">
       </div>
       <div class="item2">
         <h2>Lorem Ipsum</h2>
@@ -13,10 +13,10 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class="item4">
-
+        <img src="@/assets/flow.png" alt="truck">
       </div>
       <div class="item5">
-        <img src="@/assets/Kartamedpins-1.png" alt="karta">
+        <img src="@/assets/Kartamedpins.png" alt="karta">
       </div>
       <div class="item6">
         <h2>Lorem Ipsum</h2>

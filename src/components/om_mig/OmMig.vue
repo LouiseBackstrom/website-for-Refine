@@ -2,7 +2,7 @@
   <div class="om_mig">
     <div class="grid">
       <div class="item1">
-        <img src="@/assets/190506_BjorkbackeFoto_Camilla_2019_7212.jpg" alt="camilla">
+        <img src="@/assets/camilla1.png" alt="camilla">
       </div>
       <div class="item2">
         <h2>Lorem Ipsum</h2>

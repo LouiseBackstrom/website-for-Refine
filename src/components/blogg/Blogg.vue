@@ -1,8 +1,13 @@
 <template>
   <article class="blogg">
-    <h1>{{post.headline}}</h1>
-    <p>{{post.text}}</p>
-    <img :src="post.photo.fields.file.url" :alt="camilla" /> 
+        <div class="item1">
+            <h2>{{post.headline}}</h2>
+            <p>{{post.text}}</p>
+            <p>{{post.date}}</p>
+        </div>
+        <div class="item2">
+            <img :src="post.photo.fields.file.url" :alt="camilla" /> 
+        </div>
   </article>
 </template>
 

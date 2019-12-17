@@ -2,7 +2,7 @@
   <div class="varfor_refine">
     <div class="grid">
       <div class="item1">
-        <img src="@/assets/190506_BjorkbackeFoto_Camilla_2019_7349b.jpg" alt="camilla">
+        <img src="@/assets/camilla2.png" alt="camilla2">
       </div>
       <div class="item2">
         <h2>Lorem Ipsum</h2>

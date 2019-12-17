@@ -7,7 +7,7 @@
 
         .item1 {
             grid-area: 1 / 1 / span 1 / span 8;
-            margin: 0.25rem 0;
+            margin: 0 0 -0.25rem 0;
             
             img {
                 height: 100%;
@@ -17,22 +17,22 @@
         }
         .item2 {
             grid-area: 2 / 1 / span 1 / span 8;
-            margin: 0.25rem 0;
+            margin: 0;
             padding: 2rem;
             height: 50vw;
-            background-color: $darkgray;
+            background-color: $lightbeige;
         }
         .item3 {
             grid-area: 3 / 1 / span 1 / span 8;
-            margin: 0.25rem 0;
+            margin: 0;
             padding: 2rem;
             height: 50vw;
             padding: 0.5rem;
-            background-color: $lightgray;
+            background-color: $whitebeige;
         }
         .item4 {
             grid-area: 4 / 1 / span 1 / span 8;
-            margin: 0.25rem 0;
+            margin: 0 0 -0.25rem 0;
 
             img {
                 width: 100%;
@@ -47,7 +47,7 @@
         .grid {
             .item1 {
                 grid-area: 1 / 1 / span 1 / span 4;
-                margin: 2rem 0;
+                margin: 0 0 1rem 0;
 
                 img {
                     height: 30vw;
@@ -55,19 +55,19 @@
             }
             .item2 {
                 grid-area: 1 / 5 / span 1 / span 4;
-                margin: 2rem 0;
+                margin: 0 0 1rem 0;
                 padding: 4rem 2rem;
                 height: 30vw;
             }
             .item3 {
                 grid-area: 2 / 1 / span 1 / span 4;
-                margin: 2rem 0;
+                margin: 1rem 0 2rem 0;
                 padding: 4rem 2rem;
                 height: 30vw;
             }
             .item4 {
                 grid-area: 2 / 5 / span 1 / span 4;
-                margin: 2rem 0;
+                margin: 1rem 0 2rem 0;
                
                 img {
                     height: 30vw;
