@@ -6,7 +6,7 @@
             <p>{{post.date}}</p>
         </div>
         <div class="item2">
-            <img :src="post.photo.fields.file.url" :alt="camilla" /> 
+            <img :src="post.photo.fields.file.url" /> 
         </div>
   </article>
 </template>

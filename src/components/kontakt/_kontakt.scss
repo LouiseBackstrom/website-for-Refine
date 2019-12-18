@@ -3,7 +3,7 @@
 .kontakt {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
-    background-color: $whitebeige;
+    background-color: $blue;
 
     .grid {
         display: grid;
@@ -11,7 +11,7 @@
         padding: 3rem;
         margin: 1rem;
         border-radius: 0.2rem;
-        background-color: $footer;
+        background-color: #535561;
         grid-area: 1 / 2 / span 1 / span 6;
         color: $white;
 
@@ -42,49 +42,50 @@
             padding: 0.8rem 0;
             border-radius: 0.2rem;
             border: none;
-            background-color: $beige;
+            background-color: $darkgray;
+            font-size: 1.2rem;
+            font-weight: 400;
         }
     }
 }
 @media (min-width: 770px) {
     .kontakt {
-        padding: 1rem 6rem;
+        padding: 1rem 12rem;
 
         .grid {
-            padding: 3rem 1rem;
+            padding: 1.5rem 2.5rem;
             margin: 2rem 0;
 
             #item1 {
-                grid-area: 1 / 2 / span 1 / span 1;
+                grid-area: 1 / 1 / span 1 / span 1;
                 margin: 0.3rem 0;
                 text-align: left;
             }
             #item2 {
-                grid-area: 2 / 2 / span 1 / span 6;
+                grid-area: 2 / 1 / span 1 / span 8;
             }
             #item3 {
-                grid-area: 3 / 2 / span 1 / span 1;
+                grid-area: 3 / 1 / span 1 / span 1;
                 margin: 0.3rem 0;
                 text-align: left;
             }
             #item4 {
-                grid-area: 4 / 2 / span 1 / span 6;
+                grid-area: 4 / 1 / span 1 / span 8;
             }
             #item5 {
-                grid-area: 5 / 2 / span 1 / span 1;
+                grid-area: 5 / 1 / span 1 / span 8;
                 margin: 0.3rem 0;
                 text-align: left;
             }
             #item6 {
-                grid-area: 6 / 2 / span 1 / span 6;
+                grid-area: 6 / 1 / span 1 / span 8;
             }
             #item7 {
-                grid-area: 7 / 2 / span 1 / span 6;
+                grid-area: 7 / 1 / span 1 / span 8;
                 margin: 2rem 0 0.3rem 0;
                 padding: 0.8rem 0;
                 border-radius: 0.2rem;
                 border: none;
-                background-color: $darkbeige;
             }
         }
     }

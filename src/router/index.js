@@ -25,11 +25,6 @@ const routes = [
     component: () => import('../views/Services.vue')
   },
   {
-    path: '/pall_smart',
-    name: 'pall_smart',
-    component: () => import('../views/Pall_Smart.vue')
-  },
-  {
     path: '/why_refine',
     name: 'why_refine',
     component: () => import('../views/Why_Refine')
