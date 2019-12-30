@@ -1,55 +1,75 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
 
 
 // Typography
-$font-family-sans-serif: 'PT Sans', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
-
+$font-family-h: 'Sintony', sans-serif;
+$font-family-p: 'Quicksand', sans-serif;
 a {
     text-decoration: none;
     color: #000;
 }
+ul{
+    margin: 0;
+    padding: 0;
 
+    li {
+        list-style: none;
+        font-family: $font-family-p;
+        margin: 0.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-decoration: none;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    padding: 0;
+    font-family: $font-family-h;
 }
 
 h2 {
     font-size: 1.5rem;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0;
+    text-align: center;
+    margin: 0.5rem;
     padding: 0;
+    font-family: $font-family-h;
     
 }
 h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin: 0 0 3rem 0;
+    text-align: center;
+    color: $white;
+    margin: 0;
+    padding: 1.5rem;
+    font-family: $font-family-h;
 }
 
 h4 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    text-align: center;
     margin: 0;
-
+    padding: 0;
+    font-family: $font-family-h;
 }
 
 h5 {
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: $font-family-h;
 }
 
 p {
-    font-size: 1rem; 
+    font-size: 1rem;
+    text-align: center;
+    font-family: $font-family-p;
+    margin: 0.5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -60,22 +80,27 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+   
 }
 
 h3 {
     font-size: 2.5rem;
+    
 }
 
 h4 {
     font-size: 0.7rem;
+    
 }
 
 h5 {
     font-size: 1rem;
+    
 }
 p {
     font-size: 1rem; 
+    
 }
   
 }
@@ -85,26 +110,32 @@ p {
     /* For desktop: */
 
     h1 {
-        font-size: 5rem;
+        font-size: 2rem;
+        text-align: left;
     }
     
     h2 {
         font-size: 1.5rem;
+        text-align: left;
     }
     
     h3 {
-        font-size: 3.2rem;
+        font-size: 1.5rem;
+        text-align: left;
     }
     
     h4 {
         font-size: 1rem;
+        text-align: left;
     }
     
     h5 {
         font-size: 1.25rem;
+        text-align: left;
     }
     p {
-        font-size: 1.1rem; 
+        font-size: 0.9rem; 
+        text-align: left;
     }
 
 }

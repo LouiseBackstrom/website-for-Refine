@@ -11,53 +11,70 @@
 
             img {
                 width: 100%;
-                height: 50vw;
+                height: 15rem;
                 object-fit: cover;
                 opacity: 0.7;
             }
         }
         .item2 {
             grid-area: 2 / 1 / span 1 / span 8;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
             margin: 0;
             background-color: $gray;
-            padding: 4rem 2rem;
-            height: 50vw;
+            padding: 0.5rem;
+            height: 15rem;
         }
         .item3 {
-            grid-area: 3 / 1 / span 1 / span 8;
+            grid-area: 4 / 1 / span 1 / span 8;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
             margin: 0;
             background-color: $blue;
-            height: 50vw;
+            height: 15rem;
             padding: 0.5rem;
         }
         .item4 {
-            grid-area: 4 / 1 / span 1 / span 8;
+            grid-area: 3 / 1 / span 1 / span 8;
             margin: 0;
             background-color: $beige;
 
             img {
                 width: 100%;
-                height: 50vw;
+                height: 15rem;
                 object-fit: cover;
-                opacity: 0.6;
+                opacity: 0.7;
             }
         }
         .item5 {
             grid-area: 5 / 1 / span 1 / span 8;
             margin: 0;
             background-color: $beige;
-            
+            display: flex;
+            justify-content: center;
+            height: 15rem;
+
             img {
                 height: 100%;
-                height: 50vw;
                 object-fit: cover;
             }
         }
         .item6 {
             grid-area: 6 / 1 / span 1 / span 8;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
             margin: 0;
             background-color: $green;
-            height: 50vw;
+            height: 15rem;
             padding: 0.5rem;
         }
     }
@@ -70,42 +87,39 @@
                 margin: 0 0 1rem 0;
 
                 img {
-                    height: 30vw;
+                    height: 20rem;
                 }
             }
             .item2 {
                 grid-area: 1 / 5 / span 1 / span 4;
                 margin: 0 0 1rem 0;
                 padding: 2rem;
-                height: 30vw;
+                height: 20rem;
             }
             .item3 {
                 grid-area: 2 / 1 / span 1 / span 4;
                 margin: 1rem 0;
                 padding: 2rem;
-                height: 30vw;
+                height: 20rem;
             }
             .item4 {
                 grid-area: 2 / 5 / span 1 / span 4;
                 margin: 1rem 0;
 
                 img {
-                    height: 29vw;
+                    height: 20rem;
                 }
             }
             .item5 {
                 grid-area: 3 / 1 / span 1 / span 4;
-                margin: 1rem 0 2rem 0;
-               
-                img {
-                    height: 29vw;
-                }
+                margin: 1rem 0;
+                height: 20rem;
             }
             .item6 {
                 grid-area: 3 / 5 / span 1 / span 4;
                 margin: 1rem 0 2rem 0;
                 padding: 2rem;
-                height: 30vw;
+                height: 20rem;
             }
         }
     }

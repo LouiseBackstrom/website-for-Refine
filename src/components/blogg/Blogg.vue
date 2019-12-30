@@ -3,19 +3,25 @@
         <div class="item1">
             <h2>{{post.headline}}</h2>
             <p>{{post.text}}</p>
-            <p>{{post.date}}</p>
+            <p>{{date}}</p>
         </div>
         <div class="item2">
-            <img :src="post.photo.fields.file.url" /> 
+            <img :src="post.photo.fields.file.url" alt="" /> 
         </div>
   </article>
 </template>
 
 <script>
-
+import moment from 'moment';
+moment.locale('sv');
 export default {
     props: ['post'],
-    name: 'Entry'
+    name: 'Entry',
+    computed: {
+        date() {
+            return moment(this.post.date).format("MMM ddd YYYY");
+        }
+    }
 }
 </script>
 

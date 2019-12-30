@@ -2,8 +2,6 @@
   <div class="home">
     <Hem />
   <div>
-    
-   
   </div>
     <Footer />
   </div>
