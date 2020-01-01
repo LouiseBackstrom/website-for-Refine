@@ -8,7 +8,7 @@
       <div class="close" @click="close"><img src="@/assets/close.png" alt="close"></div>
       <div class="nav1" @click="close"><router-link to="/"><h3>Hem</h3></router-link></div>
       <div class="nav2" @click="close"><router-link to="/about_me"><h3>Om Refine</h3></router-link></div>
-      <div class="nav3" @click="close"><router-link to="/services"><h3>Tjänster</h3></router-link></div>
+      <div class="nav3" @click="close"><router-link to="/services"><h3>Våra Tjänster</h3></router-link></div>
       <div class="nav4" @click="close"><router-link to="/why_refine"><h3>Vision</h3></router-link></div>
       <div class="nav5" @click="close"><router-link to="/blog"><h3>Blogg</h3></router-link></div>
       <div class="nav6" @click="close"><router-link to="/contact"><h3>Kontakt</h3></router-link></div>
@@ -16,7 +16,7 @@
     <div v-show="desktop_nav" class="desktop_nav">
       <div class="nav1"><router-link to="/"><img src="@/assets/RefineLogoBlackTransp2.png" alt="logo"></router-link></div>
       <div class="nav2"><router-link to="/about_me"><h4>Om Refine</h4></router-link></div>
-      <div class="nav3"><router-link to="/services"><h4>Tjänster</h4></router-link></div>
+      <div class="nav3"><router-link to="/services"><h4>Våra Tjänster</h4></router-link></div>
       <div class="nav4"><router-link to="/why_refine"><h4>Vision</h4></router-link></div>
       <div class="nav5"><router-link to="/blog"><h4>Blogg</h4></router-link></div>
       <div class="nav6"><router-link to="/contact"><h4>Kontakt</h4></router-link></div>
