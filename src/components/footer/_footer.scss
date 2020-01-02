@@ -3,14 +3,14 @@
 footer {
     .grid {
         display: grid;
-        grid-template-columns: repeat(8, auto);
+        grid-template-columns: repeat(9, 11.11%);
         background-color: #292A30;
         margin: 0;
         padding: 0.5rem 0 0 0;
         color: $white;
 
         .item1 {
-            grid-area: 1 / 1 / span 1 / span 8;
+            grid-area: 1 / 1 / span 1 / span 9;
             margin: 0 0 0.5rem 0;
 
             p {
@@ -18,20 +18,33 @@ footer {
                 margin: 0.3rem;
             }
         }
-        
+        .item2 {
+            grid-area: 2 / 5 / span 1 / span 9;
+            img {
+            width: 3rem;
+            height: 100%;
+            object-fit: cover;
+            }
+        }
         .item3 {
-            grid-area: 2 / 5 / span 1 / span 2;
+            grid-area: 3 / 4 / span 1 / span 1;
         
             .instagram {
                 height: 100%;
                 width: 3rem;
                 object-fit: cover;
             }
+        }
+        .item4 {
+            grid-area: 3 / 5 / span 1 / span 1;
             .facebook {
                 height: 100%;
                 width: 3rem;
                 object-fit: cover;
             }
+        }
+        .item5 {
+            grid-area: 3 / 6 / span 1 / span 1;
             .linkedin {
                 height: 100%;
                 width: 3rem;
@@ -43,10 +56,15 @@ footer {
 @media (min-width: 768px) {
     footer {
     .grid {
-        padding: 1.5rem 0 1rem 0;
+        padding: 1rem 3rem;
         
         .item1 {
-            grid-area: 1 / 2 / span 1 / span 3;
+            grid-area: 1 / 1 / span 1 / span 3;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            vertical-align: middle;
 
             p {
                 font-size: 0.8rem;
@@ -54,17 +72,46 @@ footer {
                 color: $white;
             }
         }
+        .item2 {
+            grid-area: 1 / 5 / span 1 / span 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            vertical-align: middle;
+
+            img {
+                width: 4rem;
+            }
+            
+        }
         .item3 {
-            grid-area: 1 / 8 / span 1 / span 1;
+            grid-area: 1 / 7 / span 1 / span 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
         
             .instagram {
-                width: 4rem;
+                height: 3.5rem;
             }
+        }
+        .item4 {
+            grid-area: 1 / 8 / span 1 / span 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
             .facebook {
-                width: 4rem;
+                height: 3.5rem;
             }
+        }
+        .item5 {
+            grid-area: 1 / 9 / span 1 / span 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
             .linkedin {
-                width: 4rem;
+                height: 3.5rem;
             }
         }
     }

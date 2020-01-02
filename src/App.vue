@@ -24,14 +24,12 @@
 </template>
 
 <script>
-
-
 export default {
   name: 'app',
     data () {
       return {
         desktop_nav: true,
-        mobile_nav: false,
+        mobile_nav: false
       }
     },
       methods: {
@@ -96,65 +94,63 @@ body {
       object-fit: cover;
       }
     }
-}
-      .slide-fade-enter-active {
-        transition: all .8s ease;
-      }
-      .slide-fade-leave-active {
-        transition: all .8s cubic-bezier(1.0, 0.3, 0.4, 1.0);
-      }
-      .slide-fade-enter, .slide-fade-leave-to {
-        transform: translateY(15rem);
-        opacity: 0;
-      }
-      .mobile_nav {
-        display: grid;
-        grid-template-columns: repeat(8, 12,5%);
-        grid-column-gap: 0.2rem;
-        background-color: $white;
-        padding: 0 0 2rem 0;
-        height: 37rem;
-        position: sticky;
-        z-index: 1;
-        top: 4rem;
+  }
+  .slide-fade-enter-active {
+    transition: all .6s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .6s cubic-bezier(1.0, 0.3, 0.4, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateY(15rem);
+    opacity: 0;
+  }
+  .mobile_nav {
+    display: grid;
+    grid-template-columns: repeat(8, 12,5%);
+    grid-column-gap: 0.2rem;
+    background-color: $white;
+    padding: 0 0 2rem 0;
+    height: 37rem;
+    position: sticky;
+    z-index: 1;
+    top: 4rem;
 
-        h4 {
-        color: $white;
-        }
-        .close {
-          grid-area: 1 / 8 / span 1 / span 1;
-          padding: 1rem 0 0 0;
-          margin: 0;
+    h4 {
+    color: $white;
+    }
+    .close {
+      grid-area: 1 / 8 / span 1 / span 1;
+      padding: 1rem 0 0 0;
+      margin: 0;
 
-          img {
-            height: 100%;
-            width: 4rem;
-            object-fit: cover
-          }
-        }
-        .nav1 {
-          grid-area: 2 / 1 / span 1 / span 8;
-          
-        }
-        .nav2 {
-          grid-area: 3 / 1 / span 1 / span 8;
-          
-        }
-        .nav3 {
-          grid-area: 4 / 1 / span 1 / span 8;
-          
-        }
-        .nav4 {
-          grid-area: 5 / 1 / span 1 / span 8;
-          
-        }
-        .nav5 {
-          grid-area: 6 / 1 / span 1 / span 8;
-          
-        }
-      } 
-     
-
+      img {
+        height: 100%;
+        width: 4rem;
+        object-fit: cover
+      }
+    }
+    .nav1 {
+      grid-area: 2 / 1 / span 1 / span 8;
+      
+    }
+    .nav2 {
+      grid-area: 3 / 1 / span 1 / span 8;
+      
+    }
+    .nav3 {
+      grid-area: 4 / 1 / span 1 / span 8;
+      
+    }
+    .nav4 {
+      grid-area: 5 / 1 / span 1 / span 8;
+      
+    }
+    .nav5 {
+      grid-area: 6 / 1 / span 1 / span 8;
+      
+    }
+  } 
   .desktop_nav {
     background-color: $white;
     display: grid;
@@ -170,8 +166,7 @@ body {
     font-size: 0.9rem;
     margin: 0;
     padding: 0.8rem 0 0 0;
-}
-    
+    }
     .nav1 {
       grid-area: 1 / 1 / span 1 / span 2;
       margin: 0 0 0.2rem 1rem;
@@ -180,7 +175,7 @@ body {
       justify-content: left;
 
       img {
-         width: 12rem;
+          width: 12rem;
       }
     }
     .nav2 {
@@ -214,7 +209,6 @@ body {
       justify-content: flex-end;
       margin: 0 1rem 0 0;
     }
-
     a {
       font-weight: bold;
       text-decoration: none;
@@ -223,23 +217,21 @@ body {
         color: #818181;
       }
     }
-
     :visited {
       color: black;
     }
   }
-  
-    .fade {
-    transition-property: opacity;
-    transition-duration: .25s;
-    }
-    .fade-enter-active {
-    transition-delay: .25s;
-    }
-    .fade-enter, .fade-leave-active {
-    opacity: 0
-    }
+  .fade {
+  transition-property: opacity;
+  transition-duration: .25s;
   }
+  .fade-enter-active {
+  transition-delay: .25s;
+  }
+  .fade-enter, .fade-leave-active {
+  opacity: 0
+  }
+}
 
 @media (min-width: 600px) {
   #app {
