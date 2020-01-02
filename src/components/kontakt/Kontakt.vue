@@ -6,18 +6,18 @@
           method="POST"
         >
           <h3 id="item1">Kontakta mig</h3>
-          <label id="item2">Namn</label>
+          <label class="label" id="item2"><p>Namn</p></label>
           <input class="input1" id="item3" type="text" name="name">
           
-          <label id="item4">Email</label>
+          <label class="label" id="item4"><p>Email</p></label>
           <input class="input1" id="item5" type="email" name="_replyto">
           
-          <label id="item6">Meddelande </label>
+          <label class="label" id="item6"><p>Meddelande</p></label>
           <textarea class="input2" id="item7" name="message"></textarea>
          
           <!-- your other form fields go here -->
 
-          <button id="item8" type="submit">Skicka</button>
+          <button id="item8" type="submit"><h3>Skicka</h3></button>
       </form>
   </div>
 </template>

@@ -40,7 +40,7 @@ footer {
         }
     }
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
     footer {
     .grid {
         padding: 1.5rem 0 1rem 0;
@@ -58,13 +58,13 @@ footer {
             grid-area: 1 / 8 / span 1 / span 1;
         
             .instagram {
-                width: 3rem;
+                width: 4rem;
             }
             .facebook {
-                width: 3rem;
+                width: 4rem;
             }
             .linkedin {
-                width: 3rem;
+                width: 4rem;
             }
         }
     }

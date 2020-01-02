@@ -1,11 +1,11 @@
 <template>
   <article class="blogg">
-        <div class="item1">
+        <div class="card2" id="item1">
             <h2>{{post.headline}}</h2>
             <p>{{date}}</p>
             <p>{{post.text}}</p>
         </div>
-        <div class="item2">
+        <div class="picture3" id="item2">
             <img :src="post.photo.fields.file.url" alt="" /> 
         </div>
   </article>
