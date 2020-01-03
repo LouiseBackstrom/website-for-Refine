@@ -14,8 +14,6 @@
           
           <label class="label" id="item6"><p>Meddelande</p></label>
           <textarea class="input2" id="item7" name="message"></textarea>
-         
-          <!-- your other form fields go here -->
 
           <button id="item8" type="submit"><h3>Skicka</h3></button>
       </form>

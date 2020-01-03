@@ -150,6 +150,17 @@ body {
       grid-area: 6 / 1 / span 1 / span 8;
       
     }
+    a {
+    font-weight: bold;
+    text-decoration: none;
+
+      &.router-link-exact-active {
+        color: #818181;
+      }
+    }
+    :visited {
+      color: black;
+    }
   } 
   .desktop_nav {
     background-color: $white;

@@ -4,7 +4,7 @@ footer {
     .grid {
         display: grid;
         grid-template-columns: repeat(9, 11.11%);
-        background-color: #292A30;
+        background-color: $footer;
         margin: 0;
         padding: 0.5rem 0 0 0;
         color: $white;
@@ -20,34 +20,37 @@ footer {
         }
         .item2 {
             grid-area: 2 / 5 / span 1 / span 9;
+            margin: 0.2rem 0;
             img {
-            width: 3rem;
+            width: 4rem;
             height: 100%;
             object-fit: cover;
             }
         }
         .item3 {
             grid-area: 3 / 4 / span 1 / span 1;
-        
+            margin: 0.2rem 0;
             .instagram {
                 height: 100%;
-                width: 3rem;
+                width: 4rem;
                 object-fit: cover;
             }
         }
         .item4 {
             grid-area: 3 / 5 / span 1 / span 1;
+            margin: 0.2rem 0;
             .facebook {
                 height: 100%;
-                width: 3rem;
+                width: 4rem;
                 object-fit: cover;
             }
         }
         .item5 {
             grid-area: 3 / 6 / span 1 / span 1;
+            margin: 0.2rem 0;
             .linkedin {
                 height: 100%;
-                width: 3rem;
+                width: 4rem;
                 object-fit: cover;
             }
         }
