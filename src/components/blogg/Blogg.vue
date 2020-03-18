@@ -13,7 +13,9 @@
 
 <script>
 import moment from 'moment';
+
 moment.locale('sv');
+
 export default {
     props: ['post'],
     name: 'Entry',
